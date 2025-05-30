@@ -1,0 +1,105 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1f1f1f;
+    color: #f0f0f0;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    color: #00eaff;
+    letter-spacing: 3px;
+    margin-bottom: 32px;
+    text-shadow: 0 2px 6px rgba(0, 234, 255, 0.6);
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+td {
+    width: 90px;
+    height: 90px;
+    background: #2e2e2e;
+    border: 2px solid #444;
+    border-radius: 12px;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+td:hover {
+    background: #3c3c3c;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+td.filled {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+td button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 2.5em;
+    color: #ffd700;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.status {
+    margin-top: 24px;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    text-align: center;
+    box-shadow: 0 2px 12px #ffd70033;
+}
+
+button[name="reiniciar"] {
+    margin-top: 32px;
+    padding: 12px 32px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #181818;
+    background: linear-gradient(90deg, #ffd700, #fff8dc);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 16px #ffd70066;
+    transition: all 0.2s ease-in-out;
+}
+
+button[name="reiniciar"]:hover {
+    background: linear-gradient(90deg, #fff8dc, #ffd700);
+    box-shadow: 0 0 24px #ffd700aa;
+    transform: scale(1.05);
+}
